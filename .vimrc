@@ -25,7 +25,7 @@ set shiftwidth=4
 set expandtab
 set smartcase
 set nowrap
-set guifont=Courier\ New\ 10
+set guifont=Consolas\ 10
 
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
@@ -57,7 +57,10 @@ noremap <Down> ddp
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-set so=999
+nnoremap ; :
+nnoremap : ;
+
+set so=10
 
 set switchbuf+=usetab,newtab
 noremap <F4> :vimgrep /<C-r><C-w>/j ~/**/*.c <Bar> cw
