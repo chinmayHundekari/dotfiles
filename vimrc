@@ -1,4 +1,5 @@
-execute pathogen#infect()
+source vim/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect('~/dotfiles/vim/bundle/{}')
 call pathogen#helptags()
 set relativenumber
 set number
