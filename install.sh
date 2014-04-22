@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 mkdir -v -p vim/bundle
 
 ln -s ~/dotfiles/vimrc ~/.vimrc
