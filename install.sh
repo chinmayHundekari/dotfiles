@@ -1,7 +1,13 @@
 #!/bin/bash
 
 mkdir -v -p vim/bundle
-sudo mv ~/.vimrc ~/.vimrc_old
+if [ -f ~/.vimrc ]; then
+    sudo mv ~/.vimrc ~/.vimrc_old
+    echo "Archiving .vimrc to .vimrc_old"
+else
+    echo ".vimrc not found"
+fi
+
 sudo ln -s ~/dotfiles/vimrc ~/.vimrc
 sudo ln -s  ~/dotfiles/vim ~/.vim
 
